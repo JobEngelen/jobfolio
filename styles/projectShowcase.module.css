@@ -1,0 +1,29 @@
+.projectListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 970px;
+  }
+  
+
+.projectListItem {
+    border-radius: 8px;
+    background-color: #1F3E44;
+    width: 475px;
+    height: 415px;
+    margin-bottom: 22px;
+}
+
+.projectListItem img {
+    border-radius: 8px 8px 0 0;
+}
+
+.usedTechDisplay {
+    margin-top: 22px;
+    margin-bottom: 15px;
+}
+
+.usedTechDisplay img {
+    margin-left: 7px;
+    margin-right: 7px;
+}

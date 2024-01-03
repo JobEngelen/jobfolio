@@ -1,0 +1,207 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0F272C;
+  color: white;
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.gradient-text {
+  background: linear-gradient(to top right, #FC4F00, #FFB100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-stroke-text {
+  position: relative;
+  color: #0F272C;
+  display: inline-block;
+  font-size: 75px;
+}
+
+.gradient-stroke-text::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(to top right, #FC4F00, #FFB100);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 4px transparent;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.me-10 {
+  margin-right: 10px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-200 {
+  margin-top: 200px;
+}
+
+.mt-250 {
+  margin-top: 250px;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.p-14 {
+  padding: 14px;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-78 {
+  font-size: 78px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.bg-gradient {
+  background: linear-gradient(to top right, #FC4F00, #FFB100);
+}
+
+.text-dg {
+  color: #0F272C;
+}
+
+.text-grey {
+  color: #B8B8B8;
+}
+
+.bg-dark {
+  background-color: #0d1e22;
+}
+
+a {
+  color: #fd8000;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+}
+
+/* scrollbar stuff */
+/* For WebKit browsers (Chrome, Safari, and Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #0F272C;
+  /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top right, #FC4F00, #FFB100);
+  /* Background color of the scrollbar thumb */
+  border-radius: 6px;
+  /* Add some radius to the thumb */
+  border: solid 3px #0F272C;
+}
+
+/* For Mozilla Firefox */
+/* Note: Firefox uses a different syntax */
+/* This styling may not be supported in older Firefox versions */
+* {
+  scrollbar-color: linear-gradient(to top right, #FC4F00, #FFB100) #0F272C;
+  /* Thumb color and track color */
+  scrollbar-width: thin;
+  /* Width of the scrollbar */
+}
+
+
+
+@media (max-width: 1430px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .fs-28 {
+    font-size: 2.5vw;
+  }
+
+  .fs-78 {
+    font-size: 7vw;
+  }
+
+  .gradient-stroke-text {
+    font-size: 6.5vw;
+  }
+}

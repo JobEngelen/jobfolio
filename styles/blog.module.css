@@ -1,0 +1,50 @@
+.title {
+    margin: 12px 0 18px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.greyText {
+  align-self: flex-end;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.blogContainer p {
+    width: 900px;
+}
+
+.paragraph {
+    font-size: 20px;    
+    text-indent: 2em;
+    /* Add a tab-like indentation */
+    line-height: 30px;
+}
+
+.blogContainer p b {
+    font-size: 24px;
+    line-height: 34px;
+    display: block;
+    /* Make the lede a block element */
+}
+
+.blogContainer p b::first-letter {
+    font-size: 2em;
+    /* Make the first letter larger */
+    font-family: 'Georgia', serif;
+    /* Use a serif font */
+}
+
+@media (max-width: 1050px) {
+    .blogContainer p {
+        width: 100%;
+    }
+}

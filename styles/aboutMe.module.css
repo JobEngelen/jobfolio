@@ -1,0 +1,300 @@
+.picContainer {
+    min-width: 50px;
+}
+
+.pictureBgBlob {
+    z-index: -1;
+    margin-left: -220px;
+    margin-top: 15px;
+    transform: scale(0.97);
+}
+
+.jobPicture {
+    margin-left: -190px;
+    margin-top: 46px;
+}
+
+.introduction {
+    min-width: 800px;
+    flex-shrink: 0;
+}
+
+.introduction div h1 {
+    font-size: 78px;
+}
+
+.links {
+    height: 50px;
+}
+
+.links a {
+    color: black;
+    opacity: 0.5;
+    text-decoration: none;
+    font-size: 46px;
+    transition: opacity 0.2s, font-size 0.2s;
+}
+
+.links a:first-child {
+    margin-right: 8px;
+}
+
+.links a:hover {
+    opacity: 1;
+    font-size: 50px;
+}
+
+
+/* Blobs */
+.blobContainer {
+    position: absolute;
+    width: 1900px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.firstBlob {
+    right: 0;
+    z-index: -1;
+
+    margin-top: -180px;
+    margin-right: -350px;
+    transform: rotate(130deg) scale(1.8);
+}
+
+.secondBlob {
+    right: 0;
+    z-index: -1;
+
+    margin-right: 130px;
+    margin-top: 270px;
+}
+
+.thirdBlob {
+    right: 0;
+    z-index: -1;
+
+    margin-top: 600px;
+    transform: rotate(42deg) scaleX(0.55) scaleY(0.6);
+}
+
+.fourthBlob {
+    right: 0;
+    z-index: -1;
+
+    margin-right: 130px;
+    margin-top: 840px;
+    transform: rotate(122deg) scaleX(0.47) scaleY(0.42);
+}
+
+.fifthBlob {
+    right: 0;
+    z-index: -1;
+
+    margin-right: -35px;
+    margin-top: 990px;
+    transform: rotate(-36deg) scaleX(0.35) scaleY(0.28);
+}
+
+.sixthBlob {
+    right: 0;
+    z-index: -1;
+
+    margin-right: -120px;
+    margin-top: 1160px;
+    transform: rotate(122deg) scaleX(0.19) scaleY(0.175);
+}
+
+.schoolWrapper {
+    display: flex;
+    max-width: 930px;
+}
+
+.phoneSchoolDisplay {
+    display: none;
+    background: rgba(31, 62, 68, 0.5);
+    backdrop-filter: blur(10px);
+
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.schoolCircle {
+    height: 225px;
+    min-width: 225px;
+    background-color: #1F3E44;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schoolCircle img {
+    z-index: 10;
+}
+
+.line {
+    border-radius: 8px;
+    margin-top: 7px;
+    margin-left: -20%;
+    padding-left: 142px;
+    padding-right: 8px;
+    height: 3px;
+    background-color: #1F3E44;
+    width: 80%;
+    transition: height 0.2s, margin-left 0.2s;
+}
+
+.line span {
+    visibility: hidden;
+    display: inline-block;
+    max-width: 500px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* Align the text vertically to the center */
+}
+
+.textWrapper {
+    padding-top: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 630px;
+    order: 1;
+    transition: padding-top 0.2s;
+}
+
+.textWrapper:hover {
+    padding-top: 0;
+}
+
+.textWrapper:hover .line {
+    height: 147px;
+}
+
+.textWrapper:hover .line span {
+    visibility: visible;
+}
+
+.schoolNameContainer {
+    height: 60px;
+    margin-left: 15px;
+}
+
+.schoolName {
+    display: block;
+    text-align: right;
+}
+
+/* Add a class for right-aligned text */
+.rightAlignedText .schoolName {
+    text-align: left;
+}
+
+/* Apply the class when align is set to 'right' */
+.rightAligned .textWrapper.rightAlignedText {
+    text-align: left;
+}
+
+.rightAligned {
+    flex-direction: row-reverse;
+    /* Reverse the order of the flex items */
+}
+
+.rightAligned .textWrapper {
+    order: 2;
+    /* Change order for text when align='right' */
+}
+
+.rightAligned .schoolNameContainer {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.rightAligned .line {
+    width: 100%;
+    margin-left: 120px;
+    padding-left: 14px;
+}
+
+
+@media (max-width: 1600px) {
+    .picContainer {
+        transform: scale(0.8);
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1480px) {
+    .picContainer {
+        margin-top: -50px;
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 1430px) {
+    .picContainer {
+        order: 2;
+        margin: 0;
+        transform: scale(1);
+        min-width: 700px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 100px;
+    }
+
+    .introduction {
+        order: 1;
+        align-items: flex-start;
+        margin-left: 5%;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .desktopSchoolDisplay {
+        display: none;
+    }
+
+    .phoneSchoolDisplay {
+        display: block;
+    }
+
+    .introduction div p {
+        font-size: 3.2vw;
+        width: 100%;
+    }
+
+    .introduction div h1 {
+        font-size: 8.9vw;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .introduction div p {
+        font-size: 3.5vw;
+    }
+
+    .introduction div h1 {
+        font-size: 9.7vw;
+    }
+}

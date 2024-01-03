@@ -1,0 +1,100 @@
+.blob {
+    border-radius: 94% 31% 30% 67% / 67% 37% 56% 34%;
+    width: 250px;
+    height: 250px;
+    background: #f09;
+    background-image: linear-gradient(45deg, #3023AE 0%, #f09 100%);
+    box-shadow: -10vmin 10vmin 0 rgba(255, 255, 255, 0.07);
+
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+    width: 250px;
+    height: 250px;
+    background: rgb(0, 255, 98);
+    background-image: linear-gradient(45deg, #3023AE 0%, rgb(0, 255, 98) 100%);
+    box-shadow: -10vmin 10vmin 0 rgba(255, 255, 255, 0.07);
+    animation: animateBlob 10s linear infinite alternate;
+}
+
+.imageContainer {
+    position: relative;
+    /* Add this line */
+}
+
+.imageContainer img {
+    padding: 5px;
+    margin-right: 18px;
+    border-radius: 8px;
+    background-color: #1F3E44;
+    transition: transform 0.2s ease;
+}
+
+.imageContainer img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 15px #ffffff54;
+}
+
+.canvasContainer {
+    height: 100px;
+    z-index: 1;
+}
+
+.spinning3DModel {
+    padding-top: 100px;
+    position: sticky;
+    top: 0;
+    height: 1400px;
+    width: 700px;
+    float: right;
+    margin-top: -2400px;
+    z-index: 1;
+}
+
+.tooltipContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltipText {
+    height: 150px;
+    width: 500px;
+    padding: 8px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -180%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #1f3e44d7;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+
+
+.tooltipText p {
+    margin: 0 0 5px 0;
+}
+
+.tooltipContainer:hover .tooltipText {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 1820px) {
+    .spinning3DModel {
+        height: 1000px;
+        margin-right: -100px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .canvasContainer {
+        display: none;
+    }
+}
