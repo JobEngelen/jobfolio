@@ -67,7 +67,7 @@ const AboutMe = () => {
                 <div className={`${hammersmithOne.className} ${styles.introduction} flex-1 fs-28`}>
                     <div>
                         <p className='m-0'>
-                            <span className={pressStart2P.className}>Hello world!</span> <span>I'm</span>
+                            <span className={pressStart2P.className}>Hello world!</span> <span>I&apos;m</span>
                         </p>
                         <h1 className='m-0'>
                             <span className={`${archivoBlack.className} gradient-text`}>JOB ENGELEN</span>

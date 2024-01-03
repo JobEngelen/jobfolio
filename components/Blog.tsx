@@ -24,7 +24,7 @@ const Blog = ({ blogElements }: { blogElements: IBlogElements }) => {
 
             {
                 blogElements.contents.map((content, index) => (
-                    <FadeInOnScroll>
+                    <FadeInOnScroll key={index}>
                         {
                             content.heading ?
                                 <>
