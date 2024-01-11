@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import styles from '@/styles/aboutMe.module.css';
 import { Blob } from '@/components/svg/blob';
-import { archivoBlack, hammersmithOne, pressStart2P } from '@/fonts';
+import { archivoBlack, redHatDisplay, pressStart2P } from '@/fonts';
 import ColourBlobs from './colourBlobs';
 import { ISchoolDisplay } from '@/interfaces/schoolDisplayInterface';
 import SchoolDisplay from './schoolDisplay';
@@ -12,9 +12,9 @@ import FadeInOnScroll from '../FadeInOnScroll';
 
 const inholland: ISchoolDisplay = {
     name: 'InHolland University of Applied Sciences',
-    image: '/images/logo_inholland.png',
+    image: '/images/logo_inholland.webp',
     dateOfAttendance: '2020 - Today',
-    description: `Studied Information Technology at InHolland, a four-year program 
+    description: `I studied Information Technology at InHolland, a four-year program 
     in Haarlem, Netherlands. Covered software development, interaction design, and more. 
     Emphasized hands-on learning and followed minors in Security and User Experience Design.`,
     level: 'Bachelor',
@@ -22,10 +22,10 @@ const inholland: ISchoolDisplay = {
 }
 const yonsei: ISchoolDisplay = {
     name: 'Yonsei University, Seoul, Korea 🇰🇷',
-    image: '/images/logo_yonsei.png',
+    image: '/images/logo_yonsei.webp',
     dateOfAttendance: '2023 Fall Semester',
     description: `
-    Studied as an exchange student at Yonsei University, renowned as the leading university 
+    I studied as an exchange student at Yonsei University, renowned as the leading university 
     in Korea, during the fall semester of 2023. Followed courses Compiler Design, 
     Marketing, Neuroscience, Psychology, and Korean, gaining top-notch academic and cultural experience.`,
     level: 'Exchange',
@@ -33,14 +33,39 @@ const yonsei: ISchoolDisplay = {
 }
 const novaCollege: ISchoolDisplay = {
     name: 'Nova College Haarlem',
-    image: '/images/logo_nova.png',
+    image: '/images/logo_nova.webp',
     dateOfAttendance: '2017 - 2020',
     description: `
-    Followed the Application and Media Developer program at Nova College, exploring coding languages. Internships at various companies shaped my practical coding skills in real-world scenarios.`,
+    I followed the Application and Media Developer program at Nova College, exploring coding languages. Internships at various companies shaped my practical coding skills in real-world scenarios.`,
     level: 'MBO4',
     link: '/blog/NovaCollege',
 }
 
+const JobPicture = () => {
+    return (
+        <div>
+            <span className={`${styles.pictureBgBlob} p-absolute`}>
+                <Blob imageUrl='/images/job_photo.webp' />
+            </span>
+            <Image
+                className={`${styles.jobPicture}`}
+                src={"/images/job_photo_head_only.webp"}
+                alt="Job Engelen"
+                width={1170}
+                height={780}
+            />
+            <Eyes />
+
+            <Image
+                className={`${styles.jobPicturePhone}`}
+                src={"/images/job_photo_head_only_w_eyes.webp"}
+                alt="Job Engelen"
+                width={1170}
+                height={780}
+            />
+        </div>
+    )
+}
 
 const AboutMe = () => {
     return (
@@ -48,23 +73,10 @@ const AboutMe = () => {
             <div className='container-flex'>
 
                 <div className={`${styles.picContainer} flex-1`}>
-                    <div>
-                        <span className={`${styles.pictureBgBlob} p-absolute`}>
-                            <Blob />
-                        </span>
-                        <Image
-                            className={`${styles.jobPicture}`}
-                            src="/images/job_photo.png"
-                            alt="Job Engelen"
-                            width={1170}
-                            height={780}
-                        />
-
-                        <Eyes />
-                    </div>
+                    <JobPicture />
                 </div>
 
-                <div className={`${hammersmithOne.className} ${styles.introduction} flex-1 fs-28`}>
+                <div className={`${redHatDisplay.className} ${styles.introduction} flex-1 fs-28`}>
                     <div>
                         <p className='m-0'>
                             <span className={pressStart2P.className}>Hello world!</span> <span>I&apos;m</span>

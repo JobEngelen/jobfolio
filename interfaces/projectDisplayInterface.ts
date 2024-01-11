@@ -3,6 +3,7 @@ export interface IProjectDisplay {
     image: string;
     date: string;
     description: string;
+    link: string;
     usedTech: {
         name: string;
         link: string;

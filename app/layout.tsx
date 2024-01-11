@@ -4,10 +4,9 @@ import '../styles/globals.css';
 import NavBar from '@/components/Nav/navBar';
 import Footer from '@/components/Footer';
 
-
 export const metadata: Metadata = {
-  title: 'Job Engelen',
-  description: 'Super hippe portfolio van Job Engelen',
+  title: 'JOBFOL.IO',
+  description: 'Explore the digital world of Job Engelen - a passionate developer with a flair for creating innovative solutions. Browse through a showcase of projects and expertise in web development.',
 }
 
 export default function RootLayout({

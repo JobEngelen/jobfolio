@@ -4,14 +4,20 @@
 
 .pictureBgBlob {
     z-index: -1;
-    margin-left: -220px;
-    margin-top: 15px;
+    margin-left: -207px;
+    margin-top: 7px;
     transform: scale(0.97);
 }
 
-.jobPicture {
+.jobPicture,
+.jobPicturePhone {
     margin-left: -190px;
     margin-top: 46px;
+}
+
+.jobPicturePhone {
+    display: none;
+    visibility: hidden;
 }
 
 .introduction {
@@ -29,7 +35,6 @@
 
 .links a {
     color: black;
-    opacity: 0.5;
     text-decoration: none;
     font-size: 46px;
     transition: opacity 0.2s, font-size 0.2s;
@@ -123,6 +128,11 @@
 .flexContainer {
     display: flex;
     justify-content: flex-start;
+}
+
+.flexContainer img {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .schoolCircle {
@@ -225,10 +235,15 @@
     padding-left: 14px;
 }
 
+.mobilePic {
+    display: none;
+    visibility: hidden;
+}
 
 @media (max-width: 1600px) {
     .picContainer {
         transform: scale(0.8);
+        /* visibility: none; */
     }
 
     .introduction {
@@ -236,6 +251,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 40vh;
     }
 }
 
@@ -250,7 +266,7 @@
     .picContainer {
         order: 2;
         margin: 0;
-        transform: scale(1);
+        transform: scale(0.8);
         min-width: 700px;
 
         display: flex;
@@ -261,11 +277,37 @@
         margin-bottom: 100px;
     }
 
+    .jobPicture {
+        display: none;
+        visibility: hidden;
+    }
+
+    .jobPicturePhone {
+        display: block;
+        visibility: visible;
+    }
+
+    .eyes {
+        display: none;
+        visibility: hidden;
+    }
+
     .introduction {
         order: 1;
         align-items: flex-start;
         margin-left: 5%;
-        margin-top: 100px;
+        margin-top: 15vw;
+        margin-bottom: 30vh;
+    }
+
+    .desktopPic {
+        display: none;
+        visibility: hidden;
+    }
+
+    .mobilePic {
+        display: block;
+        visibility: visible;
     }
 }
 
@@ -287,6 +329,26 @@
         font-size: 8.9vw;
     }
 
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: calc(100vh - 91px);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .picContainer {
+        margin-top: -150px;
+        margin-bottom: -280px;
+        transform: scale(0.65);
+        margin-left: 5rem;
+    }
 }
 
 @media (max-width: 800px) {
@@ -296,5 +358,86 @@
 
     .introduction div h1 {
         font-size: 9.7vw;
+    }
+}
+
+@media (max-width: 710px) {
+    .picContainer {
+        margin-left: 3rem;
+    }
+
+}
+
+@media (max-width: 615px) {
+    .picContainer {
+        transform: scale(0.5);
+        margin-left: 0px;
+        margin-top: -200px;
+        margin-bottom: -350px;
+    }
+}
+
+@media (max-width: 575px) {
+    .picContainer {
+        margin-left: -2.5rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .picContainer {
+        transform: scale(0.5);
+    }
+}
+
+@media (max-width: 490px) {
+    .picContainer {
+        margin-left: -3rem;
+    }
+}
+
+@media (max-width: 475px) {
+    .picContainer {
+        transform: scale(0.4);
+        margin-left: -5rem;
+        margin-top: -250px;
+        margin-bottom: -400px;
+    }
+}
+
+@media (max-width: 440px) {
+    .picContainer {
+        margin-left: -6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .picContainer {
+        margin-left: -7rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .picContainer {
+        transform: scale(0.35);
+        margin-left: -8rem;
+    }
+}
+
+@media (max-width: 355px) {
+    .picContainer {
+        margin-left: -9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .picContainer {
+        transform: scale(0.3);
+        margin-left: -10rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .picContainer {
+        margin-left: -11rem;
     }
 }

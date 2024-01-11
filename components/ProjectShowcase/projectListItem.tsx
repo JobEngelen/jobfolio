@@ -1,4 +1,4 @@
-import { hammersmithOne } from '@/fonts';
+import { redHatDisplay } from '@/fonts';
 import Image from 'next/image';
 import styles from '@/styles/projectShowcase.module.css';
 import { IProjectDisplay } from '@/interfaces/projectDisplayInterface';
@@ -9,11 +9,19 @@ const ProjectListItem = ({ project }: { project: IProjectDisplay }) => {
     return (
         <FadeInOnScroll>
             <div className={styles.projectListItem}>
-                <Image src={project.image} alt={'test'} width={475} height={185} />
+                <Image
+                    src={project.image}
+                    alt={project.name}
+                    width={475}
+                    height={185}
+                    className={styles.thumbnail}
+                />
 
                 <div className="p-14 pt-0">
-                    <p className={`${hammersmithOne.className} fs-24 m-0 py-10`}>{project.name}</p>
-                    <p className='m-0'>{project.description}</p>
+                    <p className={`${redHatDisplay.className} fs-24 m-0 py-10`}>{project.name}</p>
+                    <p className={`${styles.description} m-0`}>
+                        {project.description} <Link href={`/blog/${project.link}`}>Read more...</Link>
+                    </p>
 
                     <div className={styles.usedTechDisplay}>
                         {

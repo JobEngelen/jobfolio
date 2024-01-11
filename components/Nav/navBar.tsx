@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { ReactNode } from 'react';
-import { sendFlowers, hammersmithOne } from '@/fonts';
+import { sendFlowers, redHatDisplay, pressStart2P, archivoBlack } from '@/fonts';
 import styles from '@/styles/nav.module.css';
 import { usePathname } from 'next/navigation';
 
@@ -26,12 +26,12 @@ const NavBar = () => {
     return (
         <nav className={styles.nav}>
             <div>
-                <p className={`${sendFlowers.className} gradient-text fs-78 m-0`}>
+                <p className={`${archivoBlack.className} ${styles.logo} gradient-text m-0`}>
                     <Link href='/'>JobFol.io</Link>
                 </p>
             </div>
             <div>
-                <ul className={`${styles.ul} ${hammersmithOne.className} fs-24`}>
+                <ul className={`${styles.ul} ${redHatDisplay.className} fs-24`}>
                     <NavItem href='/' className={styles.responsiveNav}><span className={`${pathName === '/' && 'gradient-text'}`}>About me</span></NavItem>
                     <NavItem href='/#skills' className={styles.responsiveNav}>Skills</NavItem>
                     <NavItem href='/#projects' className={styles.responsiveNav}>Projects</NavItem>

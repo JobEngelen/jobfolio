@@ -1,4 +1,4 @@
-import { hammersmithOne, nunito } from '@/fonts';
+import { redHatDisplay, nunito } from '@/fonts';
 import { ISchoolDisplay } from '@/interfaces/schoolDisplayInterface';
 import styles from '@/styles/aboutMe.module.css';
 import Image from 'next/image';
@@ -16,7 +16,7 @@ const SchoolDisplay = ({ school, align }: { school: ISchoolDisplay, align: strin
                     </div>
                     <div className={`${styles.textWrapper} ${align === 'left' ? styles.rightAlignedText : ''}`}>
                         <div className={styles.schoolNameContainer}>
-                            <span className={`${hammersmithOne.className} ${styles.schoolName} fs-24`}>
+                            <span className={`${redHatDisplay.className} ${styles.schoolName} fs-24`}>
                                 {school.name}<br />
                                 {school.dateOfAttendance} <small className={`${nunito.className} text-grey`}>{school.level}</small>
                             </span>
@@ -33,24 +33,16 @@ const SchoolDisplay = ({ school, align }: { school: ISchoolDisplay, align: strin
             </div>
 
             <div className={styles.phoneSchoolDisplay}>
-                {/* <div>
-                    <Image src={school.image} alt={school.name} width={100} height={100} />
-                </div>
-                <div>
-                    <h1 className={`${hammersmithOne.className} fs-24`}>{school.name}</h1>
-                    <p>{school.dateOfAttendance} | <small className={`${nunito.className} text-grey`}>{school.level}</small></p>
-                </div> */}
-
                 <div className={styles.flexContainer}>
-                    <Image 
-                    src={school.image} 
-                    alt={school.name} 
-                    width={100} 
-                    height={100}
-                    className='me-10'
+                    <Image
+                        src={school.image}
+                        alt={school.name}
+                        width={100}
+                        height={100}
+                        className='me-10'
                     />
                     <div>
-                        <h1 className={`${hammersmithOne.className} fs-24 mb-0`}>{school.name}</h1>
+                        <h1 className={`${redHatDisplay.className} fs-24 mb-0`}>{school.name}</h1>
                         <span>{school.dateOfAttendance} | <small className={`${nunito.className} text-grey`}>{school.level}</small></span>
                     </div>
                 </div>

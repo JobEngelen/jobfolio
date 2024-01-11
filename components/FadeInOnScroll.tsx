@@ -11,6 +11,10 @@ const FadeInOnScroll: React.FC<FadeInOnScrollProps> = ({ children }) => {
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    setTimeout(() => {
+      window.scrollBy(0, 1);
+    }, 100); // Delay of 100ms
+
     const handleScroll = () => {
       if (elementRef.current) {
         const elementTop = elementRef.current.getBoundingClientRect().top;

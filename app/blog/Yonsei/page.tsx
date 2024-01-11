@@ -1,5 +1,10 @@
 import { IBlogElements } from "@/interfaces/blogElementsInterface";
 import Blog from "@/components/Blog";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Yonsei University 🇰🇷 | JOBFOL.IO',
+}
 
 const YonseiPage = () => {
 
@@ -17,7 +22,7 @@ const YonseiPage = () => {
                 paragraph: `Yonsei University is a highly reputable university located in Seoul, South-Korea. Founded in 1885, it's one of the top universities in the country, often referred to as part of the "SKY" universities, which also includes Seoul National University and Korea University.`,
             },
             {
-                paragraph: `The university is quite large, with many students attending. It's a place where a lot of learning happens, both in terms of academic studies and life experiences.`,
+                paragraph: `The university is huge! I found Yonsei's campus reminiscent of Disneyland with it's main street in the middle surrounded by school buildings, leading to the iconic Underwood Hall (the Disney castle). The campus is also equipped with numerous sports facilities, an amphitheatre and even a mountain which is excellent for hiking with beautiful views from its top.`,
             },
             {
                 heading: 'Academic highlights',
@@ -37,7 +42,7 @@ const YonseiPage = () => {
             },
             {
                 heading: 'Cultural Immersion',
-                paragraph: 'Praesent mauris quam, blandit quis dapibus vel, semper eget dui. Duis tincidunt facilisis eros vel scelerisque. Maecenas vel hendrerit turpis. Cras non dui vitae dolor feugiat ultrices non et quam. Nunc auctor ultrices ornare. Nulla dignissim lectus vitae ullamcorper sollicitudin. Etiam tincidunt, velit sit amet mollis sagittis, elit ex consectetur nunc, vitae aliquet metus metus nec est. Morbi vel neque et arcu tincidunt rutrum. Maecenas ullamcorper urna mollis mi tristique interdum.'
+                paragraph: 'Apart from my studies, I explored historically significant sites such as palaces and fortresses, enjoyed various Korean dishes (I love gimbap), and went on numerous hikes with stunning views.'
             },
         ]
     }

@@ -9,15 +9,15 @@ const FollowingEye = () => {
         const handleMouseMove = (e: MouseEvent) => {
             const face = document.getElementById('face');
             if (!face) return;
-        
+
             const rect = face.getBoundingClientRect();
             let x = e.clientX - rect.left;
             let y = e.clientY - rect.top;
-        
+
             // Adjust the position of the eye considering its own width and height
             x = Math.max(x - eyeSize / 2, 0);
             y = Math.max(y - eyeSize / 2, 0);
-        
+
             // Ensure the eye stays within the face
             if (x + eyeSize > rect.width) {
                 x = rect.width - eyeSize;
@@ -25,7 +25,7 @@ const FollowingEye = () => {
             if (y + eyeSize > rect.height) {
                 y = rect.height - eyeSize;
             }
-        
+
             setEyePosition({ x, y });
         };
 
@@ -43,18 +43,17 @@ const FollowingEye = () => {
                 {
                     width: '40px',
                     height: '35px',
-                    background: 'red',
                     position: 'relative'
                 }
             }
         >
             <Image
-                src="/images/eye.png"
+                src="/images/eye.webp"
                 alt='eye'
                 style={{
                     position: 'absolute',
-                    left: `${eyePosition.x}px`,
-                    top: `${eyePosition.y}px`,
+                    left: `${eyePosition.x - 60 / 2}px`, // Subtract half of the image's width
+                    top: `${eyePosition.y - 60 / 2}px`, // Subtract half of the image's height
                 }}
 
                 height={60}

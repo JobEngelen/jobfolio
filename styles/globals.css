@@ -1,12 +1,16 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
+  position: relative;
   background-color: #0F272C;
   color: white;
   overflow-x: hidden;
   font-size: 18px;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .container {
@@ -125,6 +129,10 @@ body {
   width: 100%;
 }
 
+.w-80 {
+  width: 80%;
+}
+
 .bg-gradient {
   background: linear-gradient(to top right, #FC4F00, #FFB100);
 }
@@ -152,6 +160,11 @@ a {
 
 .fade-in.is-visible {
   opacity: 1;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  margin-top: 250px;
 }
 
 /* scrollbar stuff */
@@ -203,5 +216,10 @@ a {
 
   .gradient-stroke-text {
     font-size: 6.5vw;
+  }
+
+  .section-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
 }
