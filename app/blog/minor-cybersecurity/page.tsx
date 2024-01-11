@@ -3,7 +3,7 @@ import Blog from "@/components/Blog";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Minor Cybersecurity | JOBFOL.IO',
+    title: 'Minor Cybersecurity | JOBENGELEN.COM',
 }
 
 const CyberSecurityPage = () => {

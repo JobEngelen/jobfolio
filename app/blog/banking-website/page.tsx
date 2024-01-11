@@ -3,7 +3,7 @@ import Blog from "@/components/Blog";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Banking Website | JOBFOL.IO',
+    title: 'Banking Website | JOBENGELEN.COM',
 }
 
 const FloppaBankPage = () => {

@@ -27,7 +27,7 @@ const NavBar = () => {
         <nav className={styles.nav}>
             <div>
                 <p className={`${archivoBlack.className} ${styles.logo} gradient-text m-0`}>
-                    <Link href='/'>JobFol.io</Link>
+                    <Link href='/'>JOBENGELEN.COM</Link>
                 </p>
             </div>
             <div>

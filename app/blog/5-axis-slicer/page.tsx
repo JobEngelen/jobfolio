@@ -3,7 +3,7 @@ import Blog from "@/components/Blog";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Internship DotX | JOBFOL.IO',
+    title: 'Internship DotX | JOBENGELEN.COM',
 }
 
 const DotXPage = () => {

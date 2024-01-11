@@ -3,7 +3,7 @@ import Blog from "@/components/Blog";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Yonsei University 🇰🇷 | JOBFOL.IO',
+    title: 'Yonsei University 🇰🇷 | JOBENGELEN.COM',
 }
 
 const YonseiPage = () => {

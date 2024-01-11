@@ -3,7 +3,7 @@ import Blog from "@/components/Blog";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Nova College | JOBFOL.IO',
+    title: 'Nova College | JOBENGELEN.COM',
 }
 
 const NovaCollegePage = () => {

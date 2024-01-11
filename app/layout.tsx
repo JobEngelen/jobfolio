@@ -5,7 +5,7 @@ import NavBar from '@/components/Nav/navBar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'JOBFOL.IO',
+  title: 'JOBENGELEN.COM',
   description: 'Explore the digital world of Job Engelen - a passionate developer with a flair for creating innovative solutions. Browse through a showcase of projects and expertise in web development.',
 }
 

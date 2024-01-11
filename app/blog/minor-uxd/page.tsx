@@ -3,7 +3,7 @@ import Blog from "@/components/Blog";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Minor UXD | JOBFOL.IO',
+    title: 'Minor UXD | JOBENGELEN.COM',
 }
 
 const MinorUXDPage = () => {

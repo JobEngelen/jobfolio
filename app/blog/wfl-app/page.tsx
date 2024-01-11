@@ -3,7 +3,7 @@ import Blog from "@/components/Blog";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Internship MadX / WFL | JOBFOL.IO',
+    title: 'Internship MadX / WFL | JOBENGELEN.COM',
 }
 
 const WorldFightingLeaguePage = () => {

@@ -5,7 +5,7 @@ import Ascii3D from '@/components/Ascii3D';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Home | JOBFOL.IO',
+  title: 'Home | JOBENGELEN.COM',
 }
 
 export default function Home() {

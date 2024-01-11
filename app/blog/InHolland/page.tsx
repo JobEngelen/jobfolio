@@ -3,7 +3,7 @@ import Blog from "@/components/Blog";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'InHolland University of Applied Sciences | JOBFOL.IO',
+    title: 'InHolland University of Applied Sciences | JOBENGELEN.COM',
 }
 
 const InHollandPage = () => {
